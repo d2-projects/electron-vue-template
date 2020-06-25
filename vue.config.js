@@ -1,3 +1,5 @@
+/* eslint-disable no-template-curly-in-string */
+
 module.exports = {
   pluginOptions: {
     autoRouting: {
@@ -9,10 +11,10 @@ module.exports = {
         artifactName: '${productName}-${version}.${ext}',
         win: {
           signAndEditExecutable: false,
-          target: ['nsis', 'portable'],
+          target: ['nsis', 'portable']
         },
         portable: {
-          artifactName: '${productName}-Portable-${version}.${ext}',
+          artifactName: '${productName}-Portable-${version}.${ext}'
         }
       }
     }

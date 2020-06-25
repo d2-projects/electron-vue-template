@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "vue-cli-service electron:build",
-    "lint": "vue-cli-service lint",
+    "lint": "vue-cli-service lint --fix",
     "lint:strict": "vue-cli-service lint --no-fix --max-warnings=0",
     "dev": "vue-cli-service electron:serve",
     "postinstall": "electron-builder install-app-deps",
