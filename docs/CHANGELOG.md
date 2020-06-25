@@ -2,6 +2,13 @@
 
 规范参考：[Conventional Commits](https://conventionalcommits.org)
 
+# [1.1.0](https://github.com/d2-projects/electron-vue-template/compare/v1.0.0...v1.1.0) (2020-06-25)
+
+
+### 功能
+
+* :sparkles: use download-artifact@v2 ([2c5b2c4](https://github.com/d2-projects/electron-vue-template/commit/2c5b2c49f6001f1d53de41878055baccd13020c7))
+
 # 1.0.0 (2020-06-25)
 
 
