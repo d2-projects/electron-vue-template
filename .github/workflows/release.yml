@@ -98,3 +98,16 @@ jobs:
             @semantic-release/git@7.0.18
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
+  run:
+    name: Upload cdn
+    needs: publish
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Setup qshell
+      uses: foxundermoon/setup-qshell@v1
+      with:
+        qshell-version: '2.4.0'
+    - name: test qshell
+      run: qshell version
