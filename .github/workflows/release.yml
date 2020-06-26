@@ -150,4 +150,4 @@ jobs:
           --src-dir=$GITHUB_WORKSPACE/dist_electron \
           --bucket=d2-cdn \
           --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/download/v$VERSION/ \
-          --up-host=http://up-z0.qiniup.com
+          --up-host=https://upload-na0.qbox.me
