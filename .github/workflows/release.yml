@@ -43,8 +43,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        # os: [macos-latest, ubuntu-latest, windows-latest]
-        os: [ubuntu-latest]
+        os: [macos-latest, ubuntu-latest, windows-latest]
     steps:
       - name: Check out code
         uses: actions/checkout@v2
@@ -142,7 +141,6 @@ jobs:
       - name: Login
         run: qshell account ${{ secrets.AK }} ${{ secrets.SK }} GITHUB_ACTION
 
-      # https://github.com/d2-projects/electron-vue-template/releases/download/v1.6.0/Electron.Vue.Template-1.6.0.AppImage
       - name: Upload
         env:
           VERSION: ${{ fromJSON(needs.check.outputs.semantic).new_release_version }}
@@ -150,10 +148,4 @@ jobs:
           qshell qupload2 \
           --src-dir=$GITHUB_WORKSPACE/dist_electron \
           --bucket=d2-cdn \
-          --key-prefix=files/app/$GITHUB_REPOSITORY/releases/download/v$VERSION/ \
-          --overwrite=true \
-          --check-exists=true \
-          --check-hash=true \
-          --check-size=true \
-          --rescan-local=true \
-          --thread-count=32
+          --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/download/v$VERSION/
