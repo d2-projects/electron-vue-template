@@ -142,19 +142,13 @@ jobs:
       - name: Login
         run: qshell account ${{ secrets.AK }} ${{ secrets.SK }} GITHUB_ACTION
 
-      - name: Get Package Version
-        uses: nyaascii/package-version@v1
-
-      - name: Show Package Version
-        shell: bash
-        run: echo $PACKAGE_VERSION
-
+      # https://github.com/d2-projects/electron-vue-template/releases/download/v1.6.0/Electron.Vue.Template-1.6.0.AppImage
       - name: Upload
         run: |
           qshell qupload2 \
           --src-dir=$GITHUB_WORKSPACE/dist_electron \
           --bucket=d2-cdn \
-          --key-prefix=files/app/${GITHUB_REPOSITORY//*\//}/releases/$PACKAGE_VERSION/ \
+          --key-prefix=files/app/$GITHUB_REPOSITORY/releases/download/v${fromJSON(needs.check.outputs.semantic).new_release_version}/ \
           --overwrite=true \
           --check-exists=true \
           --check-hash=true \
