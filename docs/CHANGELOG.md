@@ -2,6 +2,18 @@
 
 规范参考：[Conventional Commits](https://conventionalcommits.org)
 
+# [1.9.0](https://github.com/d2-projects/electron-vue-template/compare/v1.8.0...v1.9.0) (2020-06-26)
+
+
+### 其他
+
+* Merge branch 'master' of https://github.com/d2-projects/electron-vue-template ([ee02786](https://github.com/d2-projects/electron-vue-template/commit/ee02786d3cbcd97fceda2b05b64fe682db556ee6))
+
+
+### 功能
+
+* :sparkles: needs: [check, build] ([5c33126](https://github.com/d2-projects/electron-vue-template/commit/5c331261d5b590b141fe1a7b1a6d8f3fd6b45633))
+
 # [1.8.0](https://github.com/d2-projects/electron-vue-template/compare/v1.7.0...v1.8.0) (2020-06-26)
 
 
