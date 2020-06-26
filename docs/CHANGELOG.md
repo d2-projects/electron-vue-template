@@ -2,6 +2,13 @@
 
 规范参考：[Conventional Commits](https://conventionalcommits.org)
 
+# [1.11.0](https://github.com/d2-projects/electron-vue-template/compare/v1.10.0...v1.11.0) (2020-06-26)
+
+
+### 功能
+
+* :sparkles: 北美上传入口 ([4897e97](https://github.com/d2-projects/electron-vue-template/commit/4897e9707a013dbdf0d0a26a8b463dae5b13100a))
+
 # [1.10.0](https://github.com/d2-projects/electron-vue-template/compare/v1.9.0...v1.10.0) (2020-06-26)
 
 
