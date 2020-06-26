@@ -2,6 +2,13 @@
 
 规范参考：[Conventional Commits](https://conventionalcommits.org)
 
+# [1.14.0](https://github.com/d2-projects/electron-vue-template/compare/v1.13.0...v1.14.0) (2020-06-26)
+
+
+### 功能
+
+* try https://up-z0.qiniup.com ([24a9471](https://github.com/d2-projects/electron-vue-template/commit/24a94717e487bddf222e3c313f3360d61af91f7f))
+
 # [1.13.0](https://github.com/d2-projects/electron-vue-template/compare/v1.12.0...v1.13.0) (2020-06-26)
 
 
