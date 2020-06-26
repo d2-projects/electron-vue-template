@@ -144,11 +144,13 @@ jobs:
 
       # https://github.com/d2-projects/electron-vue-template/releases/download/v1.6.0/Electron.Vue.Template-1.6.0.AppImage
       - name: Upload
+        env:
+          VERSION: ${{ fromJSON(needs.check.outputs.semantic).new_release_version }}
         run: |
           qshell qupload2 \
           --src-dir=$GITHUB_WORKSPACE/dist_electron \
           --bucket=d2-cdn \
-          --key-prefix=files/app/$GITHUB_REPOSITORY/releases/download/v${fromJSON(needs.check.outputs.semantic).new_release_version}/ \
+          --key-prefix=files/app/$GITHUB_REPOSITORY/releases/download/v$VERSION/ \
           --overwrite=true \
           --check-exists=true \
           --check-hash=true \
