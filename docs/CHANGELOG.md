@@ -2,6 +2,18 @@
 
 规范参考：[Conventional Commits](https://conventionalcommits.org)
 
+# [1.13.0](https://github.com/d2-projects/electron-vue-template/compare/v1.12.0...v1.13.0) (2020-06-26)
+
+
+### 其他
+
+* Merge branch 'master' of https://github.com/d2-projects/electron-vue-template ([26ecb52](https://github.com/d2-projects/electron-vue-template/commit/26ecb52e72b370c271cda746eb855ec94202ef1e))
+
+
+### 功能
+
+* use https://upload-na0.qbox.me ([e1b9d06](https://github.com/d2-projects/electron-vue-template/commit/e1b9d06218330e1210e816d0044375d8fb843631))
+
 # [1.12.0](https://github.com/d2-projects/electron-vue-template/compare/v1.11.0...v1.12.0) (2020-06-26)
 
 
