@@ -2,6 +2,13 @@
 
 规范参考：[Conventional Commits](https://conventionalcommits.org)
 
+# [1.12.0](https://github.com/d2-projects/electron-vue-template/compare/v1.11.0...v1.12.0) (2020-06-26)
+
+
+### 功能
+
+* ubuntu-latest ([b333e84](https://github.com/d2-projects/electron-vue-template/commit/b333e8410d8b3256183f4d425eb9b731bf5767fe))
+
 # [1.11.0](https://github.com/d2-projects/electron-vue-template/compare/v1.10.0...v1.11.0) (2020-06-26)
 
 
