@@ -2,6 +2,18 @@
 
 规范参考：[Conventional Commits](https://conventionalcommits.org)
 
+# [1.5.0](https://github.com/d2-projects/electron-vue-template/compare/v1.4.0...v1.5.0) (2020-06-26)
+
+
+### 其他
+
+* Merge branch 'master' of https://github.com/d2-projects/electron-vue-template ([2920515](https://github.com/d2-projects/electron-vue-template/commit/292051594defe70db5a7b705cddc0d297d4b9e09))
+
+
+### 功能
+
+* :sparkles: CDN Check out code ([1f5f188](https://github.com/d2-projects/electron-vue-template/commit/1f5f1886ad5907427e11c8d5e13dfe630a901719))
+
 # [1.4.0](https://github.com/d2-projects/electron-vue-template/compare/v1.3.0...v1.4.0) (2020-06-26)
 
 
