@@ -43,8 +43,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        # os: [macos-latest, ubuntu-latest, windows-latest]
-        os: [ubuntu-latest]
+        os: [macos-latest, ubuntu-latest, windows-latest]
     steps:
       - name: Check out code
         uses: actions/checkout@v2
@@ -149,5 +148,4 @@ jobs:
           qshell qupload2 \
           --src-dir=$GITHUB_WORKSPACE/dist_electron \
           --bucket=d2-cdn \
-          --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/download/v$VERSION/ \
-          --up-host=https://up-z0.qiniup.com
+          --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/download/v$VERSION/
