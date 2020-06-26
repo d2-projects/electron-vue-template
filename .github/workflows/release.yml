@@ -144,9 +144,6 @@ jobs:
 
       - name: Get Package Version
         uses: nyaascii/package-version@v1
-        with:
-          path: 'package.json'
-          follow-symlinks: 'false'
 
       - name: Show Package Version
         shell: bash
