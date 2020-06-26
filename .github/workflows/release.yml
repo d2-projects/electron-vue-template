@@ -13,6 +13,7 @@ jobs:
       semantic: ${{ toJSON(steps.semantic.outputs) }} # ! MUST BE STRING
     steps:
       - uses: actions/checkout@v2
+
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
@@ -73,6 +74,7 @@ jobs:
         with:
           name: dist_electron
           path: dist_electron
+
       - name: List dist folder
         run: ls -al dist_electron
 
@@ -90,6 +92,9 @@ jobs:
           name: dist_electron
           path: dist_electron
 
+      - name: List dist folder
+        run: ls -al dist_electron
+
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
         with:
@@ -104,10 +109,19 @@ jobs:
     needs: publish
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Setup qshell
-      uses: foxundermoon/setup-qshell@v1
-      with:
-        qshell-version: '2.4.0'
-    - name: test qshell
-      run: qshell version
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: dist_electron
+          path: dist_electron
+
+      - name: List dist folder
+        run: ls -al dist_electron
+
+      - name: Setup qshell
+        uses: foxundermoon/setup-qshell@v1
+        with:
+          qshell-version: '2.4.0'
+
+      - name: test qshell
+        run: qshell version
