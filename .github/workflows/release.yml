@@ -39,7 +39,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        # os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [ubuntu-latest]
     steps:
       - uses: actions/checkout@v2
         with:
@@ -105,7 +106,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
   run:
-    name: Upload cdn
+    name: CDN
     needs: publish
     runs-on: ubuntu-latest
     steps:
@@ -123,5 +124,31 @@ jobs:
         with:
           qshell-version: '2.4.0'
 
-      - name: test qshell
+      - name: Test qshell
         run: qshell version
+
+      - name: Login
+        run: qshell account ${{ secrets.AK }} ${{ secrets.SK }} GITHUB_ACTION
+
+      - name: Get Package Version
+        uses: nyaascii/package-version@v1
+        with:
+          path: 'package.json'
+          follow-symlinks: 'false'
+
+      - name: Show Package Version
+        shell: bash
+        run: echo $PACKAGE_VERSION
+
+      # - name: Upload
+      #   run: |
+      #     qshell qupload2 \
+      #     --src-dir=$GITHUB_WORKSPACE/dist_electron \
+      #     --bucket=d2-cdn \
+      #     --key-prefix=files/${GITHUB_REPOSITORY//*\//}/preview/ \
+      #     --overwrite=true \
+      #     --check-exists=true \
+      #     --check-hash=true \
+      #     --check-size=true \
+      #     --rescan-local=true \
+      #     --thread-count=32
