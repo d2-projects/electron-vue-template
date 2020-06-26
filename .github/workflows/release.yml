@@ -114,7 +114,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
   run:
-    name: CDN
+    name: Upload CDN
     needs: [check, build]
     runs-on: ubuntu-latest
     steps:
@@ -148,4 +148,5 @@ jobs:
           qshell qupload2 \
           --src-dir=$GITHUB_WORKSPACE/dist_electron \
           --bucket=d2-cdn \
-          --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/download/v$VERSION/
+          --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/download/v$VERSION/ \
+          --up-host=http://upload-na0.qiniu.com
