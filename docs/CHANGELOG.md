@@ -2,6 +2,18 @@
 
 规范参考：[Conventional Commits](https://conventionalcommits.org)
 
+# [1.2.0](https://github.com/d2-projects/electron-vue-template/compare/v1.1.0...v1.2.0) (2020-06-25)
+
+
+### 其他
+
+* Merge branch 'master' of https://github.com/d2-projects/electron-vue-template ([395f8c7](https://github.com/d2-projects/electron-vue-template/commit/395f8c7bc0bb63454101b2da064b4e56f417e74a))
+
+
+### 功能
+
+* :sparkles: Setup qshell ([0529f59](https://github.com/d2-projects/electron-vue-template/commit/0529f598ecb0f1950de6c7ae6874645464a2dbd8))
+
 # [1.1.0](https://github.com/d2-projects/electron-vue-template/compare/v1.0.0...v1.1.0) (2020-06-25)
 
 
