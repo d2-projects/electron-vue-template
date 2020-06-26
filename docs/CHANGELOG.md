@@ -2,6 +2,13 @@
 
 规范参考：[Conventional Commits](https://conventionalcommits.org)
 
+# [1.7.0](https://github.com/d2-projects/electron-vue-template/compare/v1.6.0...v1.7.0) (2020-06-26)
+
+
+### 功能
+
+* :sparkles: fromJSON(needs.check.outputs.semantic).new_release_version ([9fe616c](https://github.com/d2-projects/electron-vue-template/commit/9fe616c37ba20fc81248227825068766e0f70068))
+
 # [1.6.0](https://github.com/d2-projects/electron-vue-template/compare/v1.5.0...v1.6.0) (2020-06-26)
 
 
