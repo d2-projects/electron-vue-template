@@ -12,12 +12,16 @@ jobs:
     outputs:
       semantic: ${{ toJSON(steps.semantic.outputs) }} # ! MUST BE STRING
     steps:
-      - uses: actions/checkout@v2
+      - name: Check out code
+        uses: actions/checkout@v2
 
-      - uses: actions/setup-node@v1
+      - name: Setup Node
+        uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - uses: bahmutov/npm-install@v1
+
+      - name: Install
+        uses: bahmutov/npm-install@v1
 
       - name: Check lint
         run: yarn lint:strict
@@ -42,14 +46,18 @@ jobs:
         # os: [macos-latest, ubuntu-latest, windows-latest]
         os: [ubuntu-latest]
     steps:
-      - uses: actions/checkout@v2
+      - name: Check out code
+        uses: actions/checkout@v2
         with:
           fetch-depth: 2
 
-      - uses: actions/setup-node@v1
+      - name: Setup Node
+        uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - uses: bahmutov/npm-install@v1
+
+      - name: Install
+        uses: bahmutov/npm-install@v1
 
       - name: Tricky version
         if: fromJSON(needs.check.outputs.semantic).new_release_published == 'true'
@@ -85,7 +93,8 @@ jobs:
     name: Semantic release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Check out code
+        uses: actions/checkout@v2
 
       - name: Download artifact
         uses: actions/download-artifact@v2
@@ -110,6 +119,9 @@ jobs:
     needs: publish
     runs-on: ubuntu-latest
     steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
@@ -140,15 +152,15 @@ jobs:
         shell: bash
         run: echo $PACKAGE_VERSION
 
-      # - name: Upload
-      #   run: |
-      #     qshell qupload2 \
-      #     --src-dir=$GITHUB_WORKSPACE/dist_electron \
-      #     --bucket=d2-cdn \
-      #     --key-prefix=files/${GITHUB_REPOSITORY//*\//}/preview/ \
-      #     --overwrite=true \
-      #     --check-exists=true \
-      #     --check-hash=true \
-      #     --check-size=true \
-      #     --rescan-local=true \
-      #     --thread-count=32
+      - name: Upload
+        run: |
+          qshell qupload2 \
+          --src-dir=$GITHUB_WORKSPACE/dist_electron \
+          --bucket=d2-cdn \
+          --key-prefix=files/app/${GITHUB_REPOSITORY//*\//}/releases/$PACKAGE_VERSION/ \
+          --overwrite=true \
+          --check-exists=true \
+          --check-hash=true \
+          --check-size=true \
+          --rescan-local=true \
+          --thread-count=32
