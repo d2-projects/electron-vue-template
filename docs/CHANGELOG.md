@@ -2,6 +2,13 @@
 
 规范参考：[Conventional Commits](https://conventionalcommits.org)
 
+# [1.21.0](https://github.com/d2-projects/electron-vue-template/compare/v1.20.0...v1.21.0) (2020-06-27)
+
+
+### 功能
+
+* :sparkles: use github-release-mirror ([1e25cb5](https://github.com/d2-projects/electron-vue-template/commit/1e25cb5783da179603b76f1d97276bcecd761b1e))
+
 # [1.20.0](https://github.com/d2-projects/electron-vue-template/compare/v1.19.0...v1.20.0) (2020-06-27)
 
 
