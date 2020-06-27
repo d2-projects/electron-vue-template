@@ -1,9 +1,16 @@
-## 下载最新版本
+## 资源下载
 
+* [electron-vue-template.AppImage](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.AppImage)
 * [electron-vue-template.dmg](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.dmg)
+* [electron-vue-template.dmg.blockmap](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.dmg.blockmap)
 * [electron-vue-template.exe](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.exe)
+* [electron-vue-template.exe.blockmap](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.exe.blockmap)
 * [electron-vue-template.snap](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.snap)
+* [electron-vue-template.zip](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.zip)
 * [electron-vue-template-portable.exe](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template-portable.exe)
+* [latest-linux.yml](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/latest-linux.yml)
+* [latest-mac.yml](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/latest-mac.yml)
+* [latest.yml](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/latest.yml)
 
 ## 下载指定版本
 
@@ -24,7 +31,3 @@
 * [七牛云跨区域同步](https://portal.qiniu.com/kodo)
 
 > 七牛云文件前缀 `mirrors/d2-projects/electron-vue-template`
-
-## 检查新版本
-
-* [latest.yml](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/latest.yml)
