@@ -75,7 +75,7 @@ jobs:
       - name: Send message
         env:
           OS: ${{ matrix.os }}
-        run: curl https://api.day.app/EweNWLE36rvVR8EFfWGq7k/app%20build%20success%20on%20$OS/${GITHUB_REPOSITORY//\//:}
+        run: curl https://api.day.app/EweNWLE36rvVR8EFfWGq7k/App%20build%20success/$OS
 
   list:
     needs: build
