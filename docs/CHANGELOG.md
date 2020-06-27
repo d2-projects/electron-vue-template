@@ -2,6 +2,13 @@
 
 规范参考：[Conventional Commits](https://conventionalcommits.org)
 
+# [1.19.0](https://github.com/d2-projects/electron-vue-template/compare/v1.18.0...v1.19.0) (2020-06-27)
+
+
+### 功能
+
+* :sparkles: test d2-cdn-na ([cd0f2b6](https://github.com/d2-projects/electron-vue-template/commit/cd0f2b6c8b7e96738dc84e38ffe2f3e8bd99a367))
+
 # [1.18.0](https://github.com/d2-projects/electron-vue-template/compare/v1.17.0...v1.18.0) (2020-06-27)
 
 
