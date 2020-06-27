@@ -9,6 +9,7 @@
 
 * [构建状态](https://github.com/d2-projects/electron-vue-template/actions)
 * [七牛云](https://portal.qiniu.com/kodo/bucket/resource?bucketName=d2-cdn) 文件前缀 `mirrors/d2-projects/electron-vue-template`
+* [七牛云跨区域同步](https://portal.qiniu.com/kodo)
 
 ## 下载加速
 
