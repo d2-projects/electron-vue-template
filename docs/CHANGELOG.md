@@ -2,6 +2,15 @@
 
 规范参考：[Conventional Commits](https://conventionalcommits.org)
 
+# [1.17.0](https://github.com/d2-projects/electron-vue-template/compare/v1.16.0...v1.17.0) (2020-06-27)
+
+
+### 功能
+
+* $os ([2ef3edd](https://github.com/d2-projects/electron-vue-template/commit/2ef3edd73fb17e763ff82c00dc8a7f6e36734355))
+* OS: ${{ matrix.os }} ([b0c966d](https://github.com/d2-projects/electron-vue-template/commit/b0c966d6f81ea7a62b249f893f8a70a0b7f7b350))
+* test ([0ead875](https://github.com/d2-projects/electron-vue-template/commit/0ead8758484698e8a97f17160b3a7e67ab032233))
+
 # [1.16.0](https://github.com/d2-projects/electron-vue-template/compare/v1.15.0...v1.16.0) (2020-06-27)
 
 
