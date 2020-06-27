@@ -76,8 +76,7 @@ jobs:
       - name: Send message
         env:
           OS: ${{ toJson(matrix).os }}
-          REPO: ${{ GITHUB_REPOSITORY//\//: }}
-        run: curl https://api.day.app/EweNWLE36rvVR8EFfWGq7k/build%20success%20on%20$OS/$REPO
+        run: curl https://api.day.app/EweNWLE36rvVR8EFfWGq7k/build%20success%20on%20$OS/${GITHUB_REPOSITORY//\//:}
 
   list:
     needs: build
@@ -158,6 +157,4 @@ jobs:
           --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/download/v$VERSION/
 
       - name: Send message
-        env:
-          REPO: ${{ GITHUB_REPOSITORY//\//: }}
-        run: curl https://api.day.app/EweNWLE36rvVR8EFfWGq7k/artifact%20全部上传至七牛云/$REPO
+        run: curl https://api.day.app/EweNWLE36rvVR8EFfWGq7k/artifact%20全部上传至七牛云/${GITHUB_REPOSITORY//\//:}
