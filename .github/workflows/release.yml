@@ -147,7 +147,7 @@ jobs:
         run: |
           qshell qupload2 \
           --src-dir=$GITHUB_WORKSPACE/dist_electron \
-          --bucket=d2-cdn-na \
+          --bucket=github-release-mirror \
           --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/download/v$VERSION/
 
       - name: Send message
