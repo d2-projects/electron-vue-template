@@ -1,18 +1,4 @@
-## 资源下载
-
-* [electron-vue-template.AppImage](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.AppImage)
-* [electron-vue-template.dmg](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.dmg)
-* [electron-vue-template.dmg.blockmap](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.dmg.blockmap)
-* [electron-vue-template.exe](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.exe)
-* [electron-vue-template.exe.blockmap](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.exe.blockmap)
-* [electron-vue-template.snap](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.snap)
-* [electron-vue-template.zip](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.zip)
-* [electron-vue-template-portable.exe](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template-portable.exe)
-* [latest-linux.yml](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/latest-linux.yml)
-* [latest-mac.yml](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/latest-mac.yml)
-* [latest.yml](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/latest.yml)
-
-## 下载指定版本
+## 下载
 
 [release](https://github.com/d2-projects/electron-vue-template/releases) 页面下载资源时将下载地址中 `https://github.com` 替换为 `https://cdn.d2.pub/mirrors`
 

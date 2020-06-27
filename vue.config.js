@@ -12,13 +12,13 @@ module.exports = {
           url: 'https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/'
         },
         productName: 'electron-vue-template',
-        artifactName: '${productName}.${ext}',
+        artifactName: '${productName}-${version}.${ext}',
         win: {
           signAndEditExecutable: false,
           target: ['nsis', 'portable']
         },
         portable: {
-          artifactName: '${productName}-portable.${ext}'
+          artifactName: '${productName}-portable-${version}.${ext}'
         }
       }
     }

@@ -150,13 +150,13 @@ jobs:
           --bucket=github-release-mirror \
           --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/download/v$VERSION/
 
-      - name: Upload For Auto Update
-        run: |
-          qshell qupload2 \
-          --src-dir=$GITHUB_WORKSPACE/dist_electron \
-          --bucket=github-release-mirror \
-          --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/latest/ \
-          --overwrite=true
+      # - name: Upload For Auto Update
+      #   run: |
+      #     qshell qupload2 \
+      #     --src-dir=$GITHUB_WORKSPACE/dist_electron \
+      #     --bucket=github-release-mirror \
+      #     --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/latest/ \
+      #     --overwrite=true
 
       - name: Send message
         run: curl https://api.day.app/EweNWLE36rvVR8EFfWGq7k/artifact%20全部上传至七牛云/${GITHUB_REPOSITORY//\//:}
