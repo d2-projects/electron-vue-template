@@ -2,6 +2,13 @@
 
 规范参考：[Conventional Commits](https://conventionalcommits.org)
 
+# [1.25.0](https://github.com/d2-projects/electron-vue-template/compare/v1.24.0...v1.25.0) (2020-06-27)
+
+
+### 功能
+
+* 暂时取消固定地址 ([0071f91](https://github.com/d2-projects/electron-vue-template/commit/0071f914d6ee888344ed3d10cedb6d82e8548c86))
+
 # [1.24.0](https://github.com/d2-projects/electron-vue-template/compare/v1.23.0...v1.24.0) (2020-06-27)
 
 
