@@ -7,6 +7,10 @@ module.exports = {
     },
     electronBuilder: {
       builderOptions: {
+        publish: {
+          provider: 'generic',
+          url: 'https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/'
+        },
         productName: 'electron-vue-template',
         artifactName: '${productName}-${version}.${ext}',
         win: {

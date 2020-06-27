@@ -16,6 +16,8 @@
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
     "dayjs": "^1.8.28",
+    "electron-log": "^4.2.2",
+    "electron-updater": "^4.3.1",
     "flex.css": "^1.1.7",
     "lodash-es": "^4.17.15",
     "vue": "^2.6.11",

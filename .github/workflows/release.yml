@@ -117,6 +117,8 @@ jobs:
     name: Upload CDN
     needs: [check, build]
     runs-on: ubuntu-latest
+    env:
+      VERSION: ${{ fromJSON(needs.check.outputs.semantic).new_release_version }}
     steps:
       - name: Check out code
         uses: actions/checkout@v2
@@ -141,14 +143,20 @@ jobs:
       - name: Login
         run: qshell account ${{ secrets.AK }} ${{ secrets.SK }} GITHUB_ACTION
 
-      - name: Upload
-        env:
-          VERSION: ${{ fromJSON(needs.check.outputs.semantic).new_release_version }}
+      # - name: Upload For Version Backup
+      #   run: |
+      #     qshell qupload2 \
+      #     --src-dir=$GITHUB_WORKSPACE/dist_electron \
+      #     --bucket=github-release-mirror \
+      #     --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/download/v$VERSION/
+
+      - name: Upload For Auto Update
         run: |
           qshell qupload2 \
           --src-dir=$GITHUB_WORKSPACE/dist_electron \
           --bucket=github-release-mirror \
-          --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/download/v$VERSION/
+          --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/latest/
+          --overwrite=true
 
       - name: Send message
         run: curl https://api.day.app/EweNWLE36rvVR8EFfWGq7k/artifact%20全部上传至七牛云/${GITHUB_REPOSITORY//\//:}
