@@ -43,7 +43,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [ubuntu-latest]
+        # os: [macos-latest, ubuntu-latest, windows-latest]
     steps:
       - name: Check out code
         uses: actions/checkout@v2
@@ -71,6 +72,12 @@ jobs:
         with:
           name: dist_electron
           path: dist_electron/?*.*
+
+      - name: Send message
+        env:
+          OS: ${{ toJson(matrix).os }}
+          REPO: ${{ GITHUB_REPOSITORY//\//: }}
+        run: curl https://api.day.app/EweNWLE36rvVR8EFfWGq7k/build%20success%20on%20$OS/$REPO
 
   list:
     needs: build
@@ -149,3 +156,8 @@ jobs:
           --src-dir=$GITHUB_WORKSPACE/dist_electron \
           --bucket=d2-cdn \
           --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/download/v$VERSION/
+
+      - name: Send message
+        env:
+          REPO: ${{ GITHUB_REPOSITORY//\//: }}
+        run: curl https://api.day.app/EweNWLE36rvVR8EFfWGq7k/artifact%20全部上传至七牛云/$REPO
