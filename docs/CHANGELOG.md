@@ -2,6 +2,18 @@
 
 规范参考：[Conventional Commits](https://conventionalcommits.org)
 
+# [1.20.0](https://github.com/d2-projects/electron-vue-template/compare/v1.19.0...v1.20.0) (2020-06-27)
+
+
+### 其他
+
+* Merge branch 'master' of https://github.com/d2-projects/electron-vue-template ([da36bf0](https://github.com/d2-projects/electron-vue-template/commit/da36bf089ede81b37ae70d8e9eb006806361f826))
+
+
+### 功能
+
+* :sparkles: test 七牛云跨区域同步 ([059cb8f](https://github.com/d2-projects/electron-vue-template/commit/059cb8fee2875f95aec9fa5a0312516526d4ad40))
+
 # [1.19.0](https://github.com/d2-projects/electron-vue-template/compare/v1.18.0...v1.19.0) (2020-06-27)
 
 
