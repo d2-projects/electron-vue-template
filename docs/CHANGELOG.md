@@ -2,6 +2,23 @@
 
 规范参考：[Conventional Commits](https://conventionalcommits.org)
 
+# [1.22.0](https://github.com/d2-projects/electron-vue-template/compare/v1.21.0...v1.22.0) (2020-06-27)
+
+
+### 修复
+
+* :bug: lint ([cf0309f](https://github.com/d2-projects/electron-vue-template/commit/cf0309fb2633e441d7178984a5bc24754726eefe))
+
+
+### 其他
+
+* Merge branch 'master' of https://github.com/d2-projects/electron-vue-template ([a160431](https://github.com/d2-projects/electron-vue-template/commit/a1604313cc46b3fcb1f173721c1796179dfd276d))
+
+
+### 功能
+
+* :sparkles: Upload For Auto Update ([52eec2c](https://github.com/d2-projects/electron-vue-template/commit/52eec2c1b38f9fcbd75086eb3de730da25e4e26c))
+
 # [1.21.0](https://github.com/d2-projects/electron-vue-template/compare/v1.20.0...v1.21.0) (2020-06-27)
 
 
