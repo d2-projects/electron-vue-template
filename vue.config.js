@@ -7,7 +7,7 @@ module.exports = {
     },
     electronBuilder: {
       builderOptions: {
-        productName: 'Electron Vue Template',
+        productName: 'electron-vue-template',
         artifactName: '${productName}-${version}.${ext}',
         win: {
           signAndEditExecutable: false,

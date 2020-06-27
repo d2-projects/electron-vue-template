@@ -72,11 +72,6 @@ jobs:
           name: dist_electron
           path: dist_electron/?*.*
 
-      - name: Send message
-        env:
-          OS: ${{ matrix.os }}
-        run: curl https://api.day.app/EweNWLE36rvVR8EFfWGq7k/App%20build%20success/$OS
-
   list:
     needs: build
     name: List build result
