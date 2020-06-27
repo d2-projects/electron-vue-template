@@ -14,3 +14,7 @@
 ## 下载加速
 
 [release](https://github.com/d2-projects/electron-vue-template/releases) 页面下载资源时将下载地址中 `https://github.com` 替换为 `https://cdn.d2.pub/mirrors`
+
+## 检查新版本
+
+[](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/latest.yml)

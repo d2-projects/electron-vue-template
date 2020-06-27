@@ -155,7 +155,7 @@ jobs:
           qshell qupload2 \
           --src-dir=$GITHUB_WORKSPACE/dist_electron \
           --bucket=github-release-mirror \
-          --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/latest/
+          --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/latest/ \
           --overwrite=true
 
       - name: Send message
