@@ -1,3 +1,14 @@
+## 下载最新版本
+
+* [electron-vue-template.dmg](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.dmg)
+* [electron-vue-template.exe](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.exe)
+* [electron-vue-template.snap](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template.snap)
+* [electron-vue-template-portable.exe](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/electron-vue-template-portable.exe)
+
+## 下载指定版本
+
+[release](https://github.com/d2-projects/electron-vue-template/releases) 页面下载资源时将下载地址中 `https://github.com` 替换为 `https://cdn.d2.pub/mirrors`
+
 ## 相关文档
 
 * [antd vue](https://www.antdv.com/docs/vue/getting-started-cn/)
@@ -8,13 +19,12 @@
 ## 管理
 
 * [构建状态](https://github.com/d2-projects/electron-vue-template/actions)
-* [七牛云](https://portal.qiniu.com/kodo/bucket/resource?bucketName=d2-cdn) 文件前缀 `mirrors/d2-projects/electron-vue-template`
+* [七牛云 d2-cdn](https://portal.qiniu.com/kodo/bucket/resource?bucketName=d2-cdn)
+* [七牛云 github-release-mirror](https://portal.qiniu.com/kodo/bucket/resource?bucketName=github-release-mirror)
 * [七牛云跨区域同步](https://portal.qiniu.com/kodo)
 
-## 下载加速
-
-[release](https://github.com/d2-projects/electron-vue-template/releases) 页面下载资源时将下载地址中 `https://github.com` 替换为 `https://cdn.d2.pub/mirrors`
+> 七牛云文件前缀 `mirrors/d2-projects/electron-vue-template`
 
 ## 检查新版本
 
-[](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/latest.yml)
+* [latest.yml](https://cdn.d2.pub/mirrors/d2-projects/electron-vue-template/releases/latest/latest.yml)

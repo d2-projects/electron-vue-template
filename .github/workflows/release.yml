@@ -143,12 +143,12 @@ jobs:
       - name: Login
         run: qshell account ${{ secrets.AK }} ${{ secrets.SK }} GITHUB_ACTION
 
-      # - name: Upload For Version Backup
-      #   run: |
-      #     qshell qupload2 \
-      #     --src-dir=$GITHUB_WORKSPACE/dist_electron \
-      #     --bucket=github-release-mirror \
-      #     --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/download/v$VERSION/
+      - name: Upload For Version Backup
+        run: |
+          qshell qupload2 \
+          --src-dir=$GITHUB_WORKSPACE/dist_electron \
+          --bucket=github-release-mirror \
+          --key-prefix=mirrors/$GITHUB_REPOSITORY/releases/download/v$VERSION/
 
       - name: Upload For Auto Update
         run: |

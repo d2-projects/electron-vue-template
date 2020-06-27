@@ -5,11 +5,13 @@ import {
   createProtocol,
   installVueDevtools
 } from 'vue-cli-plugin-electron-builder/lib'
-import { autoUpdater } from 'electron-updater'
-import electronLog from 'electron-log'
+// import { autoUpdater } from 'electron-updater'
+import log from 'electron-log'
 
-autoUpdater.logger = electronLog
-autoUpdater.logger.transports.file.level = 'info'
+Object.assign(console, log.functions)
+
+// autoUpdater.logger = log
+// autoUpdater.logger.transports.file.level = 'info'
 
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
@@ -37,12 +39,13 @@ function createWindow () {
   if (process.env.WEBPACK_DEV_SERVER_URL) {
     // Load the url of the dev server if in development mode
     win.loadURL(process.env.WEBPACK_DEV_SERVER_URL)
+    // autoUpdater.checkForUpdates()
     if (!process.env.IS_TEST) win.webContents.openDevTools()
   } else {
     createProtocol('app')
     // Load the index.html when not in development
     win.loadURL('app://./index.html')
-    autoUpdater.checkForUpdatesAndNotify()
+    // autoUpdater.checkForUpdates()
   }
 
   win.on('closed', () => {
