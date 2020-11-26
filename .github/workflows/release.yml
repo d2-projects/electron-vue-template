@@ -134,6 +134,8 @@ jobs:
 
       - name: Setup qshell
         uses: foxundermoon/setup-qshell@v1
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         with:
           qshell-version: '2.4.0'
 
@@ -159,4 +161,4 @@ jobs:
       #     --overwrite=true
 
       - name: Send message
-        run: curl https://api.day.app/EweNWLE36rvVR8EFfWGq7k/artifact%20全部上传至七牛云/${GITHUB_REPOSITORY//\//:}
+        run: curl https://api.day.app/rwVK7e3nsZtopouwhRpVvM/artifact%20全部上传至七牛云/${GITHUB_REPOSITORY//\//:}
